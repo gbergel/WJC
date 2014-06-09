@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  /* Setting up font size, leading and font family
+   * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
+  font: 13px/1.5em; /* "Helvetica Neue", helvetica, Arial, sans-serif;*/
+}
+
+h1.title {
+  font-size:2.5em;
+    font-weight:300;
+
+}
+
+a {
+outline: none;
+}
+
+#main {
+  float:left;
+  width:100%;
+  height:100%;
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfceb3', endColorstr='#442211'); /* for IE */
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#dfceb3), to(#442211)); /* for webkit browsers */
+  /*background: -moz-linear-gradient(top,  #dfceb3,  #442211); /* for firefox 3.6+ */ 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfd1c5', endColorstr='#b89b7d'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfd1c5), to(#b89b7d)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #dfd1c5,  #b89b7d); /* for firefox 3.6+ */ 
+  background:#dfd1c5;
+}
+
+.page-about #main {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9c7b5', endColorstr='#f2e9e1'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9c7b5), to(#f2e9e1)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #d9c7b5,  #f2e9e1); /* for firefox 3.6+ */ 
+}
+
+#main.with-sub-nav {
+/*  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8c6b4', endColorstr='#442211'); /* for IE */
+/*  background: -webkit-gradient(linear, left top, left bottom, from(#d8c6b4), to(#442211)); /* for webkit browsers */
+/*  background: -moz-linear-gradient(top,  #d8c6b4,  #442211); /* for firefox 3.6+ */ 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8c6b4', endColorstr='#b89b7d'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#d8c6b4), to(#b89b7d)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #d8c6b4,  #b89b7d); /* for firefox 3.6+ */ 
+  background:#dfd1c5;
+}
+
+
+#content-navigation {
+  font-family: sans-serif;
+  font-size:0.9em;
+  position:relative;
+  overflow:hidden;
+  float:left;
+  width: 220px;
+  margin-right: -100%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2e9e1', endColorstr='#dfd1c5'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2e9e1), to(#dfd1c5)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #f2e9e1,  #dfd1c5); /* for firefox 3.6+ */ 
+  
+}
+
+#content-navigation a {
+  color: black;
+  text-decoration: none;
+  /*background:#dfceb3;*/
+  display:block;
+  padding:12px 10px 8px 10px;
+}
+
+#content-navigation ul,
+#content-navigation li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#content-navigation ul {
+ /* border-top:1px solid #f2e9e1;
+  border-left:1px solid #f2e9e1;
+  border-bottom:1px solid #bbae9a;
+  border-right:1px solid #bbae9a;
+  /* for IE 7 and 8 */
+  background:url(../images/132-93-62-15pct.png);
+  /* for good browsers   */
+  background: rgba(132, 93, 62, 0.15); */
+}
+#content-navigation li {
+  border-top:1px solid #f2e9e1;
+  border-left:1px solid #f2e9e1;
+  border-bottom:1px solid #bbae9a;
+  border-right:1px solid #bbae9a;
+  /* for IE 7 and 8 */
+/*  background:url(../images/132-93-62-15pct.png);
+  /* for good browsers   */
+ /* background: rgba(132, 93, 62, 0.15); */
+  padding:0px;
+}
+#content-navigation li a {
+  padding:15px 10px 10px 20px;
+  width:160px;
+}
+#content-navigation li.active a {
+  color:black;
+  font-weight:bold;
+  background:#f2e9e1;
+}
+
+#content-navigation ul li ul {
+  padding-bottom:10px;
+  background:none;
+  border:none;
+}
+#content-navigation ul li ul li {
+  border:none;
+  background:none;  
+ }
+#content-navigation ul li ul li a{
+ padding: 4px 4px 4px 30px;
+ width:auto;
+}
+
+
+
+
+
+
+#content-navigation ul,
+#content-navigation li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#content-navigation li.active a {
+  color:black;
+  font-weight:bold;
+  background:#f2e9e1;
+}
+
+
+
+
+
+
+#content {
+  margin-left:220px;
+  padding:20px;
+  background: #f2e9e1;
+  font-weight:300;
+  font-size:1.2em;
+    
+}
+#content p{
+  font-size:1.2em;  
+}
+
+#footer
+{font-size:85%; text-align:center; margin-top:20px; background-color: #f2e9e1; padding-top:10px; border-top:thin #442211 solid;}
+

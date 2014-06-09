@@ -1,0 +1,656 @@
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    width: 100%;
+    min-width: 770px;
+    background: #442211 url(../images/banner.png) top left no-repeat;
+}
+h2, h3, h4, h5, h6
+{
+    color: #442211;
+    line-height: 125%;
+}
+h2
+{
+    font-size: 18px;
+}
+h3
+{
+    font-size: 16px;
+}
+h4
+{
+    font-size: 15px;
+}
+h5
+{
+    font-size: 14px;
+}
+h6
+{
+    font-size: 13px;
+}
+
+#panZoomImage {
+    width: 640px;
+    height: 640px;
+    /*border: 1px solid black;*/
+}	
+
+div#versioningMachine 
+{
+  float: left;
+  width: 100%;
+}
+div#mainBanner
+{
+  margin-left:220px;
+/*    background-color: #b89b7d;*/
+}
+div#mainBanner a,
+div#mainBanner a:visited,
+div#mainBanner a:active,
+div#mainBanner a:hover
+{
+    color:#000;
+}
+div#mainHeading {
+  padding:1em;
+}
+div#mainHeadingTitle {
+    font-size: 36px;
+    text-transform:uppercase;
+    color:#FFF;
+    text-indent: -9999px;
+}
+div#mainHeadingSubTitle {
+    padding-left:0.5em;
+    color:#FFF;
+}
+
+
+div#headline
+{
+    font-family: sans-serif;
+    border-top: none;
+    border-left: none; /*0.08em solid black;*/
+    border-right: none;
+    border-bottom: none; /*0.08em solid black;*/
+    padding: 0.5em 0.5em 0 0.5em;
+    margin: 0;
+}
+
+div#headline h1
+{
+  font-size: 1em;
+  line-height: 1em;
+  margin:0;
+  padding:0;
+  display:inline;
+  
+}
+
+div#mainControls
+{
+    border: none;
+    margin: 0;
+   padding: 6px 10px;
+    white-space: nowrap;
+}
+
+div#mssArea
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-left:220px;
+}
+div#mssArea div.panel
+{
+    float: left;
+    border: 1px solid #f2e9e1;
+    border-left-color: #D9C7B5;
+    border-right-color: #D9C7B5;
+    min-height: 250px;
+    margin: 0;
+    padding: 0;
+    background: #f2e9e1;
+}
+div#mssArea div#notesPanel
+{
+    float: right !important;
+    z-index:999;
+}
+
+div#mssArea div#bibPanel, div#mssArea div#notesPanel, div#mssArea div.panel div.panelBanner, div#mainBanner div#headline, .viewerHandle
+{
+    /*background: #6699CC;*/
+}
+div#mssArea div.panel div.panelBanner
+{
+    height: 1.6em;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 3px 7px 3px 10px;
+    font-family: sans-serif;
+    color: #442211;
+    font-weight: 800;
+    background:#f2e9e1;
+    
+}
+div#mssArea div.panel div.panelBanner select.witnessMenu
+{
+    width: 160px;
+}
+div#mssArea div.mssPanel
+{
+    /* padding-bottom: 5em; */
+}
+div#mssArea div.mssPanel div.panelBanner
+{
+    /* border-bottom: 1px solid black; */
+}
+div#mssArea div.panel div.panelBanner img.closePanel
+{
+    float: right;
+    cursor: pointer;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+div#mssArea div.panel div.mssContent
+{
+    margin: 10px;
+    padding: 0;
+    line-height: 20px;
+    background: #f5efe9;
+    border:1px solid #000000;
+}
+div#mssArea div.panel div.mssContent div.mssImages
+{
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+div#mssArea div.panel div.mssContent img.imageLink
+{
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+div#mssArea div.panel div.mssContent a.imageLink
+{
+    float: right;
+    width: auto;
+    height: 24px;
+    margin: 4px;
+    cursor: pointer;
+    text-decoration:underline;
+    color: #0000FF;
+}
+div#mssArea div.panel div.bibContent, div#mssArea div.panel div.noteContent
+{
+    font-family: sans-serif;
+    margin: 0 10px 10px 10px;
+    line-height: 16px;
+    font-size: 11px;
+    border: thin solid black;
+    background: white;
+    overflow: hidden;
+}
+div#mssArea div.panel div.bibContent
+{
+    padding: 10px;
+}
+div#mssArea div.panel div.noteContent
+{
+    padding: 10px 10px 10px 20px;
+}
+div#mssArea div.panel div#noNotesFound
+{
+    display: none;
+    font-weight: 800;
+}
+div#mssArea div.panel div.noteContent div.witnesses
+{
+    float: none;
+    color: #666666;
+    font-style: italic;
+}
+div#mssArea div.panel div.noteContent div.position
+{
+    color: #000066;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+DIV#tipDiv {
+  z-index:999;
+  background-color:blue;
+}
+
+div.head
+{
+    text-align: center;
+}
+
+div.line, div.paragraph
+{
+    clear: both;
+}
+div.line
+{
+    margin: 0 60px 0 30px;
+    padding: 0;
+    cursor: pointer;
+}
+div.line div.linenumber, div.line div.emptynumber
+{
+    float: left;
+    margin-left: -30px;
+    width: 25px;
+    background: white;
+    overflow: hidden;
+}
+div.line div.linenumber
+{
+    text-align: right;
+    color: #442211;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.head
+{
+    font-size: 115%;
+    color: #442211;
+}
+
+div.epigraph
+{
+    text-align: center;
+    margin: 4px 25px;
+    font-size: 85%;
+}
+table.mssTable
+{
+    margin: 0 auto 0 auto;
+}
+table.mssTable td
+{
+    padding: 0 7px;
+}
+span.noteicon, span.choice
+{
+    cursor: pointer;
+    position: relative;
+    z-index: 24;
+}
+span.noteicon
+{
+    bottom: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 85%;
+    color: #000066; /* text-decoration: underline; */
+    border-bottom: 1px solid #000066;
+}
+span.choice
+{
+}
+
+div.head span.noteicon
+{
+    font-size: 74% !important;
+}
+span.noteicon div.note, span.choice div.corr
+{
+    display: none;
+}
+span.noteicon div.note
+{
+    text-decoration: none !important;
+}
+
+span.noteicon:hover, span.choice:hover
+{
+    z-index: 25;
+}
+span.noteicon:hover div.note, span.choice:hover div.corr
+{
+    display: block;
+    position: absolute;
+    top: 14px;
+    padding: 7px 20px;
+    text-decoration: none;
+    font-size: 105%;
+    color: black;
+    text-align: left;
+    border: thick solid #442211;
+    background: white;
+    font-weight: 400 !important;
+}
+span.noteicon:hover div.note
+{
+    left: 0;
+    min-width: 250px;
+    max-width: 500px;
+    background: white;
+}
+span.choice:hover div.corr
+{
+    left: 0;
+    min-width: 175px;
+    max-width: 350px;
+    background: white;
+    font-size: 90%;
+}
+
+div.paragraph
+{
+    padding: 4px 0;
+    margin: 6px 0 6px 0;
+}
+div.mssContent div.paragraph
+{
+    margin: 6px 30px 6px 20px;
+}
+
+em.label
+{
+    color: #009900;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+del
+{
+    text-decoration: line-through;
+    color: #330000;
+}
+
+ins
+{
+    text-decoration: none;
+    color: #003300;
+}
+span.unclear
+{
+    color: #666666;
+}
+
+.rend-underline, .rend-underscore
+{
+    text-decoration: underline;
+}
+.rend-italics, .rend-italic
+{
+    font-style: italic;
+}
+.rend-overstrike, .rend-strikethrough, .rend-strike
+{
+    text-decoration: line-through;
+}
+.rend-right
+{
+    text-align: right;
+}
+.rend-left
+{
+    text-align: left;
+}
+.rend-center
+{
+    text-align: center;
+}
+.rend-justify
+{
+    text-align: justify;
+}
+
+.place-above, .rend-superscript
+{
+    vertical-align: super;
+    font-size: 85%;
+    line-height: 0;
+}
+
+.place-above, .rend-supralinear
+{
+    vertical-align: super;
+    font-size: 85%;
+    line-height: 0;
+}
+
+.place-below
+{
+    vertical-align: sub;
+    font-size: 85%;
+    line-height: 0;
+}
+.place-below, .rend-infralinear
+{
+    text-align: right;
+    vertical-align: baseline;
+    font-size: 85%;
+    line-height: 0;
+}
+
+br.stanzabreak, div.type-stanza
+{
+    margin-bottom: 25px;
+}
+div.type-couplet
+{
+    margin-bottom: 25px;
+}
+div.type-triplet
+{
+    margin-bottom: 25px;
+}
+div.type-tercet
+{
+    margin-bottom: 25px;
+}
+div.type-quatrain
+{
+    margin-bottom: 25px;
+}
+div.type-cinquain
+{
+    margin-bottom: 25px;
+}
+div.type-sestet
+{
+    margin-bottom: 25px;
+}
+div.type-doublesestet
+{
+    margin-bottom: 25px;
+}
+div.type-septet
+{
+    margin-bottom: 25px;
+}
+div.type-octave
+{
+    margin-bottom: 25px;
+}
+div.type-decet
+{
+    margin-bottom: 25px;
+}
+
+
+.pagebreak
+{
+    margin: 10px auto 10px auto;
+    clear: right;
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+.highlighted
+{
+    font-weight: 800;
+    background: yellow;
+}
+
+
+#panel_imageViewer
+{
+    height:640px;
+    width:640px;
+}
+.viewerRoot
+{
+    cursor: move;
+    background-color: #f2e9e1;
+    border: 0.08em solid #f2e9e1;
+    font-family: sans-serif;
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+}
+.viewerHandle
+{
+    clear: both;
+    margin: 0;
+    padding: 0.32em;
+    height: 1.4em;
+    line-height: 1.4em;
+    color: #442211;
+    background-color: #f2e9e1;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+span.viewerHandleLt
+{
+    float: left;
+    text-align: left;
+}
+.viewerHandleRt
+{
+    float: right;
+    text-align: right;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0;
+}
+.viewerContent
+{
+    background:#000000;
+    margin: 0 0.16em 0.16em 0.16em;
+    padding: 0 0.16em 0.16em 0.16em;
+}
+.viewerContent img
+{
+    clear: left;
+    display: block;
+    margin: 0 auto;
+    width: 37em;
+}
+
+#magnification
+{
+    display: block;
+    height: 14px;
+    margin: 0;
+    width: 350px;
+}
+.link-zoom
+{
+    cursor: pointer;
+    float: left;
+    font-size: 9pt;
+    height: 10px;
+    margin: 0 7px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+.italic {
+    font-style:italic;
+}
+
+/*JC addition*/
+a.navArrow{color:#EEEEDD;margin:4px; font-size:35%;}
+a.navArrow:hover{color:blue}
+
+
+.sigil
+{
+padding: 3px;
+margin-right: 4px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.critical-apparatus {
+  margin: 0 60px 1em 49px;
+  padding:1em;
+  background: #f2e9e1;
+  border:1px dashed #eadfd4;
+}
+.critical-apparatus.critical-apparatus-line {
+  margin: 0 60px 1em 30px;
+}
+
+.critical-apparatus ul {
+  padding:0;
+  margin:0;
+}
+
+.critical-apparatus ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+  list-style-image: none;
+}
+.selected,
+div.line.selected {
+  padding:0.5em 0.25em 0.375em 0.5em;
+  background-color:#eadfd4;
+}
+span.linenumber {
+  padding-right:0.5em;
+  font-size:0.8em;
+}
+div.line.selected span.linenumber {
+font-size:1em;
+}
+div.line div.emptynumber,
+div.line div.linenumber {
+  display:none;
+}
+
+ul.appline li.appline-fragment span.sigil,
+ul.app li.rdg span.witnesses {
+  color:#442211;
+  font-size:80%; 
+}
+
+ul.app li.rdg.current .reading,
+ul.app li.rdg span.sigil.current,
+ul.appline li.appline-fragment.current .linecontent,
+ul.appline li.appline-fragment span.sigil.current
+ {
+  color:#000000;
+  font-weight:bolder
+}
+ul.app li.rdg span.sigil.current {
+  font-size: 1.2em;
+}
+
