@@ -9,7 +9,7 @@ WJC.xml (source file)
 WJC.xsl (use to generate WJC.HTML which is moved to the ../HTML folder)
 
 
-Using recent saxon (v9he) do something like:
+To regenerate, using recent saxon (v9he) do something like:
 
 saxon -o:WJC-app.html -s:WJC.xml -xsl:WJC-HTML-apparatus.xsl
 saxon -o:WJC-critapp.html -s:WJC.xml -xsl:WJC-HTML-critapp.xsl
