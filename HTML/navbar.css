@@ -1,0 +1,40 @@
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li.navBar a {
+		display:block;
+    text-decoration:none;
+	}
+	li.navBar {
+		float: left;
+	}
+
+	.navBar {
+   	display: block;
+   	padding: 14px 16px;
+   	background-color: #dddddd;
+   	text-align: center;
+	}
+
+	.navLink:hover {
+		background-color: #92939b;
+	}
+
+  #navBarCurrent {
+    text-decoration: underline;
+  }
+
+  ol {
+    counter-reset: item;
+  }
+  ol li { display: block }
+
+  ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    font-weight: bold;
+  }
